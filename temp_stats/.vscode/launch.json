@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "Z:\\couse\\temp_stats_job_v2_g\\temp_stats.exe",
+            "args": [
+                "-f", "Z:\\couse\\temp_stats_job_v2_g\\temperature_big.csv",
+                "-m", "",
+                "-g", ""
+            ],
+            "stopAtEntry": false,
+            "cwd": "Z:\\couse\\temp_stats_job_v2_g",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\msys64\\mingw64\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
